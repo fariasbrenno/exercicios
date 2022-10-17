@@ -22,7 +22,7 @@ function iniciar(){
         return spaceVelocity;
     }
     function printData (name, velocity){
-        
+        alert ("Espaçonave: "+name+"\nVelocidade: "+velocity+"km/s");
     }
     do{
         spaceOption = menu();
@@ -33,7 +33,12 @@ function iniciar(){
             case "2":
                 spaceVelocity = slowDown(spaceVelocity);
                 break
-            
+            case "3":
+                printData(spaceName, spaceVelocity);
+                break
+            case "4":
+                alert("Programa encerrado");
+                break
         }
     }while(spaceOption != 4);
     
