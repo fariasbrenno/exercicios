@@ -10,6 +10,25 @@ function iniciar(){
         }
         return menuOption;
     }
+    function speed (velocity){
+        spaceVelocity = velocity + 5;
+        return spaceVelocity;
+    }
+    function slowDown (velocity){
+        spaceVelocity = velocity - 5;
+        if(spaceVelocity < 0){
+            spaceVelocity = 0;
+        }
+        return spaceVelocity;
+    }
+    do{
+        spaceOption = menu();
+        switch(spaceOption){
+            case "1":
+                spaceVelocity = speed(spaceVelocity);
+                break
+        }
+    }while(spaceOption != 4);
     
 }
 
