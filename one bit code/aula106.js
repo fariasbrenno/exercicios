@@ -13,9 +13,7 @@ function iniciar (){
         return option;
     }
 
-    function speed(){
-        
-    }
+    
 }
 
 
