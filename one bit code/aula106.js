@@ -21,12 +21,19 @@ function iniciar(){
         }
         return spaceVelocity;
     }
+    function printData (name, velocity){
+        
+    }
     do{
         spaceOption = menu();
         switch(spaceOption){
             case "1":
                 spaceVelocity = speed(spaceVelocity);
                 break
+            case "2":
+                spaceVelocity = slowDown(spaceVelocity);
+                break
+            
         }
     }while(spaceOption != 4);
     
