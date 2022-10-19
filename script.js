@@ -3,3 +3,4 @@ let velocidade = function (velocity){
 }
 
 let newVelocity = velocidade (20);
+console.log (newVelocity);
