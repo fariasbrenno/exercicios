@@ -14,3 +14,19 @@ function soma(a, b, cb){
 }
 
 soma(5,5,print);
+
+function calculo (a, b, cb){
+    let calc = a+b;
+    cb(calc);
+}
+calculo (10,5, (num) => {
+    console.log("Resultado callback arrow function "+num)
+})
+
+function somador (a, b, cb) {
+    let op = a+b;
+    cb(op);
+}
+somador (10, 20, function (num) {
+    console.log("Resultado callback com função anonima "+num);
+});
