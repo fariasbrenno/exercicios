@@ -1,5 +1,5 @@
 function iniciarPrograma (){
-    let initialVelocity = 150;
+    /* let initialVelocity = 150;
 
     function slowDown () {
         printVelocity(initialVelocity);
@@ -24,9 +24,10 @@ function iniciarPrograma (){
         document.write("Velocidade atual "+slow+"km/s <br>");
     }
 
-    slowDown();
-     
-
+    slowDown(); */
+     function slowDown (velocity, print){
+        
+     }
 }
 
 //Eventos
