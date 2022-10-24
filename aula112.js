@@ -13,6 +13,7 @@ function iniciarPrograma (){
             }
         }
     }
+    
     function printVelocity (slow){
         document.write(slow+"<br>");
     }
