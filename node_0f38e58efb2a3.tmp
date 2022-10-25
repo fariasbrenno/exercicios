@@ -27,22 +27,17 @@ function iniciarPrograma (){
     slowDown(); */
 
     function slowDown (velocity, print){
-
         let desaceleration = 20;
-        while (velocity > 0) {
+        while (velocity < 0) {
+            alert("LAÇO");
             print(velocity);
-            velocity = velocity - desaceleration;
-            if(velocity<0){
-                velocity = 0;
-                console.log("Velocidade atual: "+velocity+" km/s <br>")
-            }      
+            velocity = velocity - desaceleration;      
         }
-        alert("Nave parada: As comportas podem ser abertas");
     }
 
     let spaceVelocity = 150;
     slowDown(spaceVelocity, function (velocidade) {
-        console.log("Velocidade atual: "+velocidade+" km/s <br>");
+        document.write("Velocidade atual: "+velocidade+" km/s");
     });
 }
 
