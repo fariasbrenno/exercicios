@@ -1,4 +1,4 @@
-let velocidade = function (velocity){
+/*let velocidade = function (velocity){
     return velocity*2;
 }
 
@@ -29,4 +29,12 @@ function somador (a, b, cb) {
 }
 somador (10, 20, function (num) {
     console.log("Resultado callback com função anonima "+num);
-});
+});*/
+let nave = ["Colossus", "Elemental", "Helmet"];
+console.log(nave);
+
+nave.push ("Super Nova");
+console.log(nave);
+
+nave.pop ();
+console.log(nave);
